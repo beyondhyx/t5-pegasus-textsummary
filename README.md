@@ -25,6 +25,7 @@
 ~~~shell script
 source activate tensorflow_p36
 pip install tensorflow==1.15 keras==2.3.1 bert4keras==0.10.0 jieba tqdm rouge
+pip install 'h5py==2.10.0' --force-reinstall  #https://stackoverflow.com/questions/53740577/does-any-one-got-attributeerror-str-object-has-no-attribute-decode-whi
 python finetune.py
 ~~~
 训练结束会产生一个keras结构的模型文件 - best_model.weights
